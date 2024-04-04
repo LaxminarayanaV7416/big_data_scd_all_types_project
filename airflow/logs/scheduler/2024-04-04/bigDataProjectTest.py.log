@@ -1,35 +1,7 @@
-[2024-04-04T01:16:49.028-0500] {processor.py:161} INFO - Started process (PID=33808) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:16:49.031-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
-[2024-04-04T01:16:49.032-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:16:49.031-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:16:49.271-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:16:49.340-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:16:49.340-0500] {dag.py:3047} INFO - Sync 1 DAGs
-[2024-04-04T01:16:49.346-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:16:49.346-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
-[2024-04-04T01:16:49.354-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.327 seconds
-[2024-04-04T01:17:31.247-0500] {processor.py:161} INFO - Started process (PID=33877) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:17:31.247-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
-[2024-04-04T01:17:31.248-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:17:31.248-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:17:31.494-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:17:31.542-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:17:31.542-0500] {dag.py:3047} INFO - Sync 1 DAGs
-[2024-04-04T01:17:31.548-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:17:31.548-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
-[2024-04-04T01:17:31.554-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.308 seconds
-[2024-04-04T01:18:24.993-0500] {processor.py:161} INFO - Started process (PID=33953) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:18:24.994-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
-[2024-04-04T01:18:24.994-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:18:24.994-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:18:25.288-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:18:25.320-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:18:25.319-0500] {dag.py:3047} INFO - Sync 1 DAGs
-[2024-04-04T01:18:25.325-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:18:25.325-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
-[2024-04-04T01:18:25.331-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.339 seconds
-[2024-04-04T01:19:19.267-0500] {processor.py:161} INFO - Started process (PID=34161) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:19:19.267-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
-[2024-04-04T01:19:19.267-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:19:19.267-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:19:19.537-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:19:19.571-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:19:19.571-0500] {dag.py:3047} INFO - Sync 1 DAGs
-[2024-04-04T01:19:19.577-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:19:19.577-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
-[2024-04-04T01:19:19.584-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.318 seconds
-[2024-04-04T01:20:15.499-0500] {processor.py:161} INFO - Started process (PID=34255) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:20:15.500-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
-[2024-04-04T01:20:15.501-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:20:15.501-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:20:15.766-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
-[2024-04-04T01:20:15.805-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:20:15.805-0500] {dag.py:3047} INFO - Sync 1 DAGs
-[2024-04-04T01:20:15.811-0500] {logging_mixin.py:188} INFO - [2024-04-04T01:20:15.811-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
-[2024-04-04T01:20:15.818-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.319 seconds
+[2024-04-04T12:39:21.819-0500] {processor.py:161} INFO - Started process (PID=57600) to work on /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
+[2024-04-04T12:39:21.819-0500] {processor.py:830} INFO - Processing file /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py for tasks to queue
+[2024-04-04T12:39:21.820-0500] {logging_mixin.py:188} INFO - [2024-04-04T12:39:21.820-0500] {dagbag.py:540} INFO - Filling up the DagBag from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
+[2024-04-04T12:39:22.109-0500] {processor.py:840} INFO - DAG(s) 'BigDataProjectTest' retrieved from /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py
+[2024-04-04T12:39:22.145-0500] {logging_mixin.py:188} INFO - [2024-04-04T12:39:22.145-0500] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-04T12:39:22.151-0500] {logging_mixin.py:188} INFO - [2024-04-04T12:39:22.151-0500] {dag.py:3834} INFO - Setting next_dagrun for BigDataProjectTest to 2024-04-03 00:00:00+00:00, run_after=2024-04-04 00:00:00+00:00
+[2024-04-04T12:39:22.157-0500] {processor.py:183} INFO - Processing /Volumes/SLU_CS/big_data_scd_all_types_project/airflow/dags/bigDataProjectTest.py took 0.339 seconds

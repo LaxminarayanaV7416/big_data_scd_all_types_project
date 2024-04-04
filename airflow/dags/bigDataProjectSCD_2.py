@@ -4,17 +4,13 @@ from datetime import timedelta, datetime
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python import PythonOperator
 import pandas as pd
-import os
 
-RAW_PATH = "SCDs/SCD_0/raw_data"
-FINAL_PATH = "SCDs/SCD_0/final_data"
-COLUMNS = ["id", "fax", "email", "domain_name"]
 
 DAG_ARGS = {
-    'dag_id': 'BigDataProjectSCD_0',
+    'dag_id': 'BigDataProjectSCD_2',
     'description': 'this Dag will query the database and put it into a file!',
     # 'schedule' : timedelta(days=1),
-    'start_date': datetime(2024, 4, 4),
+    'start_date': datetime(2024, 4, 3),
     'catchup': False,
     'tags': ['BigDataProject'],
     'default_args': {'depends_on_past': False,
@@ -26,26 +22,23 @@ DAG_ARGS = {
 }
 
 
-def save_file(todays_date):
+def save_file():
 
     step_1 = PostgresOperator(
-        task_id="QueyingTransactionalDBForSCD0",
-        sql="SELECT * FROM company_info",
+        task_id="QueyingTransactionalDB",
+        sql="SELECT * FROM test",
         postgres_conn_id="transactional_db_uri"
     )
 
     pg_result = step_1.execute(context={})
-    df = pd.DataFrame(pg_result, columns=COLUMNS)
-    PATH = os.path.join(RAW_PATH, todays_date)
-    df.to_csv(PATH, index=False)
-    print("Data saved to:", PATH)
+    df = pd.DataFrame(pg_result)
+    output_file_path = "raw_test.csv"
+    df.to_csv(output_file_path, index=False)
+    print("Data saved to:", output_file_path)
 
-def last_step(todays_date):
-    if not os.path.exists(os.path.join(FINAL_PATH, "final_results.csv")):
-        PATH = os.path.join(RAW_PATH, todays_date)
-        df = pd.read_csv(PATH)
-        df.to_csv(os.path.join(FINAL_PATH, "final_results.csv"), index = False)
-    print("Hurrey we are up to date!")
+
+def last_step():
+    print("Hello World am Done!")
 
 
 with DAG(**DAG_ARGS) as dag:
@@ -53,13 +46,12 @@ with DAG(**DAG_ARGS) as dag:
     step_2 = PythonOperator(
         task_id="queryPostgresSaveFile",
         python_callable=save_file,
-        op_kwargs = { "todays_date" : "{{ ts_nodash }}"}
+        # op_kwargs = {"command" : , "start_date" : "{{ ds }}"}
     )
 
     step_3 = PythonOperator(
-        task_id="UpdateTheQueriedFilesAsPerSCD_0",
-        python_callable=last_step,
-        op_kwargs = { "todays_date" : "{{ ts_nodash }}"}
+        task_id="TestPrint",
+        python_callable=last_step
     )
 
 step_2 >> step_3

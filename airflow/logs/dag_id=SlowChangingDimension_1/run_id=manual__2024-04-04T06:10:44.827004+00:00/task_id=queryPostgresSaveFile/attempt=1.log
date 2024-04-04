@@ -1,0 +1,20 @@
+[2024-04-04T01:10:47.359-0500] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: SlowChangingDimension_1.queryPostgresSaveFile manual__2024-04-04T06:10:44.827004+00:00 [queued]>
+[2024-04-04T01:10:47.367-0500] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: SlowChangingDimension_1.queryPostgresSaveFile manual__2024-04-04T06:10:44.827004+00:00 [queued]>
+[2024-04-04T01:10:47.367-0500] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-04-04T01:10:47.377-0500] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): queryPostgresSaveFile> on 2024-04-04 06:10:44.827004+00:00
+[2024-04-04T01:10:47.383-0500] {standard_task_runner.py:60} INFO - Started process 33012 to run task
+[2024-04-04T01:10:47.387-0500] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'SlowChangingDimension_1', 'queryPostgresSaveFile', 'manual__2024-04-04T06:10:44.827004+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/scd_0.py', '--cfg-path', '/var/folders/vv/q_fdzqpd787cn9t82l571nsw0000gn/T/tmp9a3b76gq']
+[2024-04-04T01:10:47.388-0500] {standard_task_runner.py:88} INFO - Job 5: Subtask queryPostgresSaveFile
+[2024-04-04T01:10:47.426-0500] {task_command.py:423} INFO - Running <TaskInstance: SlowChangingDimension_1.queryPostgresSaveFile manual__2024-04-04T06:10:44.827004+00:00 [running]> on host laxminayanasair.lan
+[2024-04-04T01:10:47.459-0500] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='laxminarayana.vadnala@slu.edu' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='SlowChangingDimension_1' AIRFLOW_CTX_TASK_ID='queryPostgresSaveFile' AIRFLOW_CTX_EXECUTION_DATE='2024-04-04T06:10:44.827004+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-04T06:10:44.827004+00:00'
+[2024-04-04T01:10:47.467-0500] {sql.py:276} INFO - Executing: SELECT * FROM test
+[2024-04-04T01:10:47.470-0500] {base.py:83} INFO - Using connection ID 'transactional_db_uri' for task execution.
+[2024-04-04T01:10:47.518-0500] {base.py:83} INFO - Using connection ID 'transactional_db_uri' for task execution.
+[2024-04-04T01:10:47.701-0500] {sql.py:457} INFO - Running statement: SELECT * FROM test, parameters: None
+[2024-04-04T01:10:47.713-0500] {sql.py:466} INFO - Rows affected: 2
+[2024-04-04T01:10:47.718-0500] {logging_mixin.py:188} WARNING - /Volumes/SLU_CS/big_data_scd_all_types_project/.venv/lib/python3.11/site-packages/airflow/providers/common/sql/hooks/sql.py:407 AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+[2024-04-04T01:10:47.725-0500] {logging_mixin.py:188} INFO - Data saved to: raw_test.csv
+[2024-04-04T01:10:47.726-0500] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-04T01:10:47.729-0500] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=SlowChangingDimension_1, task_id=queryPostgresSaveFile, execution_date=20240404T061044, start_date=20240404T061047, end_date=20240404T061047
+[2024-04-04T01:10:47.742-0500] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-04T01:10:47.751-0500] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
